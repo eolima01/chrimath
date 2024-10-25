@@ -1,0 +1,235 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Frame 1: Prévia dos cursos */
+.frame1 {
+    background-color: #407e77;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 20px 200px;
+}
+.logo {
+    width: 100px;
+}
+.frame1 h1 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.frame1 iframe {
+    width: 60%;
+    height: 400px;
+    margin-bottom: 20px;
+}
+.frame1 h2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.frame1 a {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #128f93;
+    padding: 15px 30px;
+    border: 1px solid black;
+    border-radius: 10px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 1.2rem;
+}
+
+/* Frame 2: Aprenda Matemática Simplificada */
+.frame2 {
+    background-image: url(professor.jpg);
+    background-size: cover; /* Ajusta o fundo para cobrir toda a área */
+    color: #4977b7;
+    text-align: center;
+    padding: 100px 200px;
+}
+
+.frame2 h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-family: fontemaior;
+}
+.frame2 p {
+    font-family: fontemenor;
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+}
+.frame2 a {
+    background-color: #e74c3c;
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+}
+
+/* Frame 3: Diferenciais da Chrimath */
+.frame3 {
+    padding: 80px 200px;
+    background-color: #436f6a;
+    text-align: center;
+    font-family: 'Mochiy Pop P One';
+}
+.frame3 h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+.diferenciais {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap; /* Permite que as colunas se movam para baixo em telas menores */
+}
+.diferenciais img {
+    width: 300px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+.diferenciais div {
+    max-width: 400px;
+    text-align: left;
+    flex: 1; /* Permite que cada coluna ocupe espaço proporcionalmente */
+    min-width: 250px; /* Largura mínima para cada coluna */
+}
+.diferenciais h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+.diferenciais ul {
+    list-style: none;
+    padding: 0;
+}
+.diferenciais ul li {
+    margin-bottom: 10px;
+}
+
+/* Frame 4: Nossos Cursos */
+.frame4 {
+    background-color: #4f8081;
+    text-align: center;
+    padding: 20px 300px;
+}
+.frame4 h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+.cursos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap; /* Permite que as colunas se movam para baixo em telas menores */
+}
+.cursos div {
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 250px;
+    text-align: center;
+    margin: 10px; /* Margem para separar os cursos */
+}
+
+/* Botão Comece */
+.comece {
+    background-color: #46ccd0;
+    text-decoration: none; /* Remove o sublinhado */
+    transition: color 0.8s, transform 0.8s; /* Transição suave */
+}
+.comece:hover {
+    background-color: #51aba7;
+    color: #ffffff; /* Muda a cor do texto ao passar o mouse */
+    transform: scale(1.05); /* Aumenta um pouco o tamanho */
+}
+.comece {
+    padding: 15px 30px;
+    border: 1px solid black;
+    border-radius: 10px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 1.2rem;
+}
+
+/* Frame 5: Envie suas dificuldades */
+.frame5 {
+    text-align: center;
+    padding: 100px 200px;
+    background-color: #e74c3c;
+    color: white;
+}
+.aulas {
+    display: flex;
+    justify-content: space-around; /* Distribui o espaço entre as colunas */
+    flex-wrap: wrap; /* Permite que as colunas se movam para baixo em telas menores */
+}
+.frame5 h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+.dificuldade {
+    background-color: white;
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #e74c3c;
+    font-size: 1.2rem;
+}
+.clique {
+    text-decoration: none;
+    color: black;
+}
+
+/* Frame 6: Footer */
+footer {
+    background-color: #34495e;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+footer img {
+    width: 100px;
+}
+footer p {
+    margin: 10px 0;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .frame1, .frame2, .frame3, .frame4, .frame5 {
+        padding: 20px; /* Reduz padding em telas menores */
+    }
+    
+    .frame1 iframe {
+        width: 100%; /* Ajusta iframe para ocupar 100% da largura */
+        height: auto; /* Mantém a proporção do iframe */
+    }
+
+    .diferenciais, .cursos, .aulas {
+        flex-direction: column; /* Empilha os itens verticalmente */
+        align-items: center; /* Centraliza os itens */
+    }
+
+    .diferenciais div, .cursos div {
+        width: 100%; /* Faz cada coluna ocupar 100% da largura */
+        margin: 10px 0; /* Margem em cima e embaixo */
+    }
+
+    .comece {
+        width: 100%; /* Botão ocupa toda a largura em telas menores */
+    }
+
+    .frame5 {
+        padding: 50px 20px; /* Ajuste de padding */
+    }
+}
+@font-face {
+    font-family:fontemenor ;
+    src: url(PassionOneBold.ttf);
+}
+@font-face {
+    font-family:fontemaior ;
+    src: url(PassionOneRegular.ttf);
+}
